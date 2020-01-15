@@ -6,40 +6,57 @@ import java.util.List;
 
 public class Loader2 {
     public static void main(String[] args) {
-        // Проверяем Мишу
-        // Перепробовала уже 10 раз как можно решить задачу
-        // Подскажите, пожалуйста, в какую сторону лучше смотреть?
-        // Алгоритмы поиска? Вот с алгоритмами пробелема. Буду благодарна за доп. задание
 
         int vasya = 25;
         int katya = 22;
         int misha = 25;
 
-        //First decision
-        // ===============================================================
+        max(vasya, katya, misha);
+    }
 
-//        int minimum = Integer.min(misha,Integer.min(vasya,katya));
-//        int middle = misha >= katya && misha <= vasya ? misha : katya >= misha && katya <= vasya ? katya :  vasya;
-//        int maximum = Integer.max(misha,Integer.max(katya,vasya));
-//
-        //Second decision
-        // ===============================================================
-        List<Integer> humanList = new LinkedList<>();
-        humanList.add(vasya);
-        humanList.add(katya);
-        humanList.add(misha);
+    public static void max(int a, int b, int c) {
+        int maximum = 0;
+        int middle = 0;
+        int minimum = 0;
+        if (a >= b) {
+            maximum = a;
+            if (b >= c) {
+                middle = b;
+                minimum = c;
+            } else if (c >= b) {
+                middle = c;
+                minimum = b;
+            }
+        }
 
-        Collections.sort(humanList);
+//      ====================
 
-        int minimum = humanList.get(0);
-        int middle = humanList.get(1);
-        int maximum = humanList.get(2);
+        if (b >= a) {
+            maximum = b;
+            if (a >= c) {
+                middle = a;
+                minimum = c;
+            } else if (c >= a) {
+                middle = c;
+                minimum = a;
+            }
+        }
 
-        // ===============================================================
+//        ====================
 
-        System.out.printf("Самый большой возраст: %s\n",maximum);
-        System.out.printf("Средний возраст: %s\n",middle);
-        System.out.printf("Меньший возраст: %s\n",minimum);
+        if (c >= a) {
+            maximum = c;
+            if (a >= b) {
+                middle = a;
+                minimum = b;
+            } else if (b >= a) {
+                middle = b;
+                minimum = a;
+            }
+        }
+        System.out.printf("Самый большой возраст: %s\n", maximum);
+        System.out.printf("Средний возраст: %s\n", middle);
+        System.out.printf("Меньший возраст: %s\n", minimum);
     }
 }
 
