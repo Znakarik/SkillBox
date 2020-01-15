@@ -1,5 +1,5 @@
 import core.*;
-import core.Camera;
+import core.Camera1;
 
 import java.util.Scanner;
 
@@ -22,17 +22,17 @@ public class RoadController
 
         for(int i = 0; i < carsCount; i++)
         {
-            Car car = Camera.getNextCar();
-            System.out.println(car);
+            Car1 car1 = Camera1.getNextCar();
+            System.out.println(car1);
 
             //Пропускаем автомобили спецтранспорта бесплатно
-            if (car.isSpecial) {
+            if (car1.isSpecial) {
                 openWay();
                 continue;
             }
 
             //Проверяем высоту и массу автомобиля, вычисляем стоимость проезда
-            int price = calculatePrice(car);
+            int price = calculatePrice(car1);
             if(price == -1) {
                 continue;
             }
@@ -44,9 +44,9 @@ public class RoadController
     /**
      * Расчёт стоимости проезда исходя из массы и высоты
      */
-    private static int calculatePrice(Car car)
+    private static int calculatePrice(Car1 car1)
     {
-        int carHeight = car.height;
+        int carHeight = car1.height;
         int price = 0;
         if (carHeight > controllerMaxHeight)
         {
@@ -55,12 +55,12 @@ public class RoadController
         }
         else if (carHeight > passengerCarMaxHeight)
         {
-            double weight = car.weight;
+            double weight = car1.weight;
             //Грузовой автомобиль
             if (weight > passengerCarMaxWeight)
             {
                 price = passengerCarPrice;
-                if (car.hasVehicle) {
+                if (car1.hasVehicle) {
                     price = price + vehicleAdditionalPrice;
                 }
             }

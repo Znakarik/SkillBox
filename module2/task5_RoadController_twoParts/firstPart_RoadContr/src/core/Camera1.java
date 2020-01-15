@@ -1,11 +1,10 @@
 package core;
 
-public class Camera {
+public class Camera1 {
     public static Car1 getNextCar() {
-        // Обьявление переменной "+"
-        String randomNumber = Double.toString(Math.random()).substring(2, 5); // +
-        int randomHeight = (int) (1000 + 3500. * Math.random());// +
-        double randomWeight = 600 + 10000 * Math.random();// +
+        String randomNumber = Double.toString(Math.random()).substring(2, 5);
+        int randomHeight = (int) (1000 + 3500. * Math.random());
+        double randomWeight = 600 + 10000 * Math.random();
 
         Car1 car1 = new Car1();
         car1.number = randomNumber;

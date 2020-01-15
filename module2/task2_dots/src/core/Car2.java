@@ -1,6 +1,6 @@
 package core;
 
-public class Car
+public class Car2
 {
 
     // Обьявление переменной "+"
