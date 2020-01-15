@@ -1,5 +1,5 @@
 
-public class Cat
+public class Cat2
 {
     // Задание 4
     public static final int EYE_COUNT = 4;
@@ -19,9 +19,9 @@ public class Cat
     public CatColors getCatColors(){
         return this.catColor;
     }
-    public static Cat makeCopyCat(Cat cat){
-        Cat cat1 = cat;
-        return cat1;
+    public static Cat2 makeCopyCat(Cat2 cat2){
+        Cat2 cat21 = cat2;
+        return cat21;
     }
 
 
@@ -39,18 +39,18 @@ public class Cat
     public double getAteFood(){
         return weight - originWeight;
     }
-    public Cat()
+    public Cat2()
     {
         weight = 1500.0 + 3000.0 * Math.random();
         originWeight = weight;
-        Cat.count++;
+        Cat2.count++;
 
     }
-    public static Cat generateCatWithWeight(int weight){
-        return new Cat(weight);
+    public static Cat2 generateCatWithWeight(int weight){
+        return new Cat2(weight);
     }
     // Задание 4 - конструктор
-    public Cat(int weight){
+    public Cat2(int weight){
         this.weight = weight;
     }
 
@@ -78,11 +78,11 @@ public class Cat
     public String getStatus()
     {
         if(weight < MIN_WEIGHT) {
-            Cat.count -= 1;
+            Cat2.count -= 1;
             return "Dead";
         }
         else if(weight > MAX_WEIGHT) {
-            Cat.count -= 1;
+            Cat2.count -= 1;
             return "Exploded";
         }
         else if(weight > originWeight) {

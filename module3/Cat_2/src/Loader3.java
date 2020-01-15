@@ -1,8 +1,8 @@
 
-public class Loader {
+public class Loader3 {
     public static void main(String[] args) {
-        Cat cat = new Cat();
-        Cat cat2 = new Cat();
+        Cat2 cat = new Cat2();
+        Cat2 cat2 = new Cat2();
 
         cat.feed(5000.);
         System.out.println(cat.getStatus());
@@ -14,9 +14,9 @@ public class Loader {
         System.out.println("Вес второй кошки после - " + cat2.getWeight());
 
         //// Задание 4 - генерация кошки
-        System.out.println(Cat.getCount());
-        Cat cat3 = Cat.generateCatWithWeight(1000);
-        System.out.println(cat3.getWeight());
+        System.out.println(Cat2.getCount());
+        Cat2 cat23 = Cat2.generateCatWithWeight(1000);
+        System.out.println(cat23.getWeight());
 
         cat.setCatColors(CatColors.DARK_BLUE);
 
@@ -25,9 +25,9 @@ public class Loader {
         System.out.println("Первый коть - " + cat.getCatColors());
 
         // Создание копии кошки
-        Cat cat4 = Cat.makeCopyCat(cat2);
+        Cat2 cat24 = Cat2.makeCopyCat(cat2);
         System.out.println("Цвет нашей скопированной кошки должен быть одинаков с второй кошкой - "
-                + cat4.getCatColors());
+                + cat24.getCatColors());
 
         // Задание 1
 //        for (int i = 0; i < cat.getWeight(); i++) {

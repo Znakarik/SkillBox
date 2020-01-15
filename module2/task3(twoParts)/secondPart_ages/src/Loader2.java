@@ -4,7 +4,7 @@ import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Loader {
+public class Loader2 {
     public static void main(String[] args) {
         // Проверяем Мишу
         // Перепробовала уже 10 раз как можно решить задачу

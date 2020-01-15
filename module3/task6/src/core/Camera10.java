@@ -1,6 +1,6 @@
 package core;
 
-public class Camera
+public class Camera10
 {
     public static Car1 getNextCar()
     {

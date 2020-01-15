@@ -4,15 +4,15 @@ public class Refrigerator {
     private int eggsCount; // items
     private int sugarAmount; // g
     private int oilAmount; // ml
-    private int appleCount ;
+    private int appleCount;
 
-    public Refrigerator(){
-        milkAmount =(int) Math.round(Math.random() * 300);
-        powderAmount =(int) Math.round(Math.random() * 1000);
-        eggsCount =(int) Math.round(Math.random() * 20);
-        sugarAmount =(int) Math.round(Math.random() * 400);
-        oilAmount =(int) Math.round(Math.random() * 200);
-        appleCount =(int) Math.round(Math.random() * 20);
+    public Refrigerator() {
+        milkAmount = (int) Math.round(Math.random() * 300);
+        powderAmount = (int) Math.round(Math.random() * 1000);
+        eggsCount = (int) Math.round(Math.random() * 20);
+        sugarAmount = (int) Math.round(Math.random() * 400);
+        oilAmount = (int) Math.round(Math.random() * 200);
+        appleCount = (int) Math.round(Math.random() * 20);
     }
 
     public int getMilkAmount() {

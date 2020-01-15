@@ -1,6 +1,6 @@
 package core;
 
-public class Car
+public class Car10
 {
     public String number;
     public int height;

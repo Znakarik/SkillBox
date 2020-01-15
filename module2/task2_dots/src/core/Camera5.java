@@ -1,6 +1,6 @@
 package core;
 
-public class Camera {
+public class Camera5 {
     public static Car1 getNextCar() {
         // Обьявление переменной "+"
         String randomNumber = Double.toString(Math.random()).substring(2, 5); // +
