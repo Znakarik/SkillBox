@@ -4,6 +4,21 @@ public class Loader3 {
         Cat2 cat = new Cat2();
         Cat2 cat2 = new Cat2();
 
+        /*
+        Насчет Вашего комментария к заданию.
+        У нас же есть только конструктор без параметров,
+        Вы пытаетесь создать кота с параметром "0"
+        Создание невозможно, только если добавить новый конструктор с параметром int
+        Возможно я неправильно что-то поняла
+
+        Cat cat = new Cat(0);
+        Cat cat2 = new Cat();
+        for (int i = 0; i < cat.getWeight(); i++) {
+            cat2.meow();
+        }
+        System.out.println(cat2.getStatus()); // Playing
+         */
+
         cat.feed(5000.);
         System.out.println(cat.getStatus());
 
