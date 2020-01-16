@@ -109,6 +109,5 @@ public class Cat2 {
             isAlive = true;
             return "Playing";
         }
-
     }
 }

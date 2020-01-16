@@ -24,9 +24,10 @@ public class Loader3 {
 //        System.out.println(cat.getAteFood());
         System.out.println("Вес второй кошки до - " + cat2.getWeight());
         cat2.goToPeepee();
+        cat2.feed(100.);
         System.out.println("Было сьедено второй кошкой - " + cat2.getAteFood());
         System.out.println("Вес второй кошки после - " + cat2.getWeight());
-        System.out.println(cat2.getWeight());
+
 //
 //        //// Задание 4 - генерация кошки
 //        System.out.println(Cat2.getCount());
