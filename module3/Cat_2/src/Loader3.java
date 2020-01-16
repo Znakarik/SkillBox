@@ -21,7 +21,7 @@ public class Loader3 {
         // Задание 2
         Cat2 cat2 = new Cat2();
         Cat2 cat = new Cat2();
-//        System.out.println(cat.getAteFood());
+        System.out.println("Было сьедено - " + cat.getAteFood());
         System.out.println("Вес второй кошки до - " + cat2.getWeight());
         cat2.goToPeepee();
         cat2.feed(100.);
