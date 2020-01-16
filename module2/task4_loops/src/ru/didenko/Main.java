@@ -4,19 +4,19 @@ public class Main {
 
     public static void main(String[] args) {
 
-//          from 200_000 to 220_000
-//          from 220_000 to 235_000
-//          with while and fori
-        for (int i = 200_000; i < 235_000; i++) {
-            if (i < 220_000) {
+        for (int i = 200; i <= 235; i++) {
+            if (i <= 210) {
                 System.out.println(i);
-
-            } else System.out.println(i);
+            } else if (i >= 220) {
+                System.out.println(i);
+            }
         }
 
-        int j = 200_000;
-        while (j < 235_000) {
-            while (j < 220_000) {
+        System.out.println("==========");
+
+        int j = 200;
+        while (j <= 235) {
+            while (j <= 220) {
                 j++;
                 System.out.println(j);
             }
