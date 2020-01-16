@@ -18,11 +18,15 @@ public class Loader3 {
 //        cat.feed(5000.);
 //        System.out.println(cat.getStatus());
 //
-//        // Задание 2
+        // Задание 2
+        Cat2 cat2 = new Cat2();
+        Cat2 cat = new Cat2();
 //        System.out.println(cat.getAteFood());
-//        System.out.println("Вес второй кошки до - " + cat2.getWeight());
-//        cat2.goToPeepee();
-//        System.out.println("Вес второй кошки после - " + cat2.getWeight());
+        System.out.println("Вес второй кошки до - " + cat2.getWeight());
+        cat2.goToPeepee();
+        System.out.println("Было сьедено второй кошкой - " + cat2.getAteFood());
+        System.out.println("Вес второй кошки после - " + cat2.getWeight());
+        System.out.println(cat2.getWeight());
 //
 //        //// Задание 4 - генерация кошки
 //        System.out.println(Cat2.getCount());
@@ -52,20 +56,23 @@ public class Loader3 {
 //        System.out.println(c.getWeight());
 //        System.out.println(c.getAteFood());
 
-        Cat2 cat2 = new Cat2();
 
-        int tpm = 0;
-        System.out.println(cat2.getWeight());
-        for (int i = 0; i < cat2.getWeight()+1; i++) {
-            cat2.feed(10000.);
-            System.out.println(cat2.getStatus());
-            tpm++;
-            System.out.println(i);
-        }
+////       TASK 1 Модификации 16.01.2019
+//        Cat2 cat2 = new Cat2();
+//
+//        int tpm = 0;
+//        System.out.println(cat2.getWeight());
+//        for (int i = 0; i < cat2.getWeight()+1; i++) {
+//            cat2.feed(10000.);
+//            System.out.println(cat2.getStatus());
+//            tpm++;
+//            System.out.println(i);
+//        }
+////        System.out.println(cat2.getStatus());
+//        System.out.println(tpm);
+//        System.out.println("\n============\n");
 //        System.out.println(cat2.getStatus());
-        System.out.println(tpm);
-        System.out.println("\n============\n");
-        System.out.println(cat2.getStatus());
-    }
+//    }
 
+    }
 }
