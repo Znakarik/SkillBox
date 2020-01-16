@@ -54,12 +54,18 @@ public class Loader3 {
 
         Cat2 cat2 = new Cat2();
 
+        int tpm = 0;
         System.out.println(cat2.getWeight());
-        for (int i = 0; i < cat2.getWeight(); i++) {
-            cat2.feed(100000.);
+        for (int i = 0; i < cat2.getWeight()+1; i++) {
+            cat2.feed(10000.);
             System.out.println(cat2.getStatus());
+            tpm++;
+            System.out.println(i);
         }
-
+//        System.out.println(cat2.getStatus());
+        System.out.println(tpm);
+        System.out.println("\n============\n");
+        System.out.println(cat2.getStatus());
     }
 
 }
